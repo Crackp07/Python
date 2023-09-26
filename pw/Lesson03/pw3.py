@@ -26,28 +26,22 @@
 # else : minimum = number2
 # print("Мінімум з чисел: ",minimum)
 # 5
-number1 = int(input("Введіть перше число: "))
-number2 = int(input("Введіть друге число: "))
+a = int(input("Введіть перше число: "))
+b = int(input("Введіть друге число: "))
 print("Виберіть операцію: ")
-print("1. Сума: ")
-print("2. Різниця: ")
-print("3. Середнє арифметичне: ")
-print("4. Добуток: ")
-choice = int(input("Виберіть номер операції (1/2/3/4): "))
-if choice == '1':
-    result = number1 + number2
-    operation = "Сума"
-elif choice == '2':
-    result = number1 - number2
-    operation = "Різниця"
-elif choice == '3':
-    result = (number1 + number2) / 2
-    operation = "Середнє арифметичне"
-elif choice == '4':
-    result = number1 * number2
-    operation = "Добуток"
-else : 
-    print("Некоректний вибір операції")
-    result = None
-if result is not None:
-    print(f"Результат {operation} чисел {number1} і {number2} дорівнює {result}")
+print("1: Сума ")
+print("2: Різниця ")
+print("3: Середнє арифметичне ")
+print("4: Добуток ")
+c = int(input())
+if c == 1:
+    print("Сумма чисел дорівнює ", a+b)
+elif c == 2:
+    print("Різниця чисел дорівнює ", a-b)
+elif c == 3:
+    print("Середнє арифметичне дорівнює", a+b/2)
+elif c == 4:
+    print("Добуток дорівнює ", a*b)
+else:
+    print("Виберіть правильну операцію. Введіть номер операції 1 або 2 або 3 або 4")
+print("Операцію виконано")

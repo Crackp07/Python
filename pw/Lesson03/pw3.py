@@ -33,7 +33,7 @@ print("1. Сума: ")
 print("2. Різниця: ")
 print("3. Середнє арифметичне: ")
 print("4. Добуток: ")
-choice = input("Виберіть номер операції (1/2/3/4): ")
+choice = int(input("Виберіть номер операції (1/2/3/4): "))
 if choice == '1':
     result = number1 + number2
     operation = "Сума"

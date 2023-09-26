@@ -6,8 +6,8 @@
 # print('Сумма чисел: ', sum_result)
 # print('Произведение чисел: ', product_result)
 
-zarplata = int(input("Зарплата за місяць: "))
-kredit = int(input("Сума місячного платежу по кредиту: "))
-komunalni_poslugi = int(input("Задолженісь за комунальні послуги: "))
-zalishok = zarplata - kredit - komunalni_poslugi
-print("Залишок після виплат: ", zalishok)
+# zarplata = int(input("Зарплата за місяць: "))
+# kredit = int(input("Сума місячного платежу по кредиту: "))
+# komunalni_poslugi = int(input("Задолженісь за комунальні послуги: "))
+# zalishok = zarplata - kredit - komunalni_poslugi
+# print("Залишок після виплат: ", zalishok)

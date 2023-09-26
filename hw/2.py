@@ -5,4 +5,4 @@
 # final_number = int(result)
 # print ('Number: ', final_number)
 
-number = input('Введіть число (4 цифри): ')
+# number = input('Введіть число (4 цифри): ')

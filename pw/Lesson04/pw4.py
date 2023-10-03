@@ -6,12 +6,12 @@
 #     if i % 2 != 0:
 #         print(i, end=' ')
 # 3
-num1 = int(input("Введіть початкове число: "))
-num2 = int(input("Введіть кінцеве число: "))
-print("Парні числа в заданому діапазоні: ")
-for i in range(num1, num2 + 1):
-    if i % 2 == 0:
-        print(i, end=' ') 
+# num1 = int(input("Введіть початкове число: "))
+# num2 = int(input("Введіть кінцеве число: "))
+# print("Парні числа в заданому діапазоні: ")
+# for i in range(num1, num2 + 1):
+#     if i % 2 == 0:
+#         print(i, end=' ') 
 # 4
 # num1 = int(input("Введіть початкове число: "))
 # num2 = int(input("Введіть кінцеве число: "))

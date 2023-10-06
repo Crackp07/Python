@@ -10,8 +10,8 @@ def line(l,d,s):
     if d == 'horizontal':
         horizontal_line= l * s
         print(horizontal_line)
-    elif d == 'vertical':
-        vertical_line= l * s
+    else: d == 'vertical'
+    vertical_line= l * s
     print(vertical_line)
 line(15, 'horizontal', '-')
 line(6, 'vertical', '|')

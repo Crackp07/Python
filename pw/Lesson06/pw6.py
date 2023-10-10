@@ -6,15 +6,15 @@
 #     print(text)
 # display_text()
 # 3
-def line(l,d,s):
-    if d == 'horizontal':
-        horizontal_line= l * s
-        print(horizontal_line)
-    else: d == 'vertical'
-    vertical_line= l * s
-    print(vertical_line)
-line(15, 'horizontal', '-')
-line(6, 'vertical', '|')
+# def line(l,d,s):
+#     if d == 'horizontal':
+#         horizontal_line= l * s
+#         print(horizontal_line)
+#     else: d == 'vertical'
+#     vertical_line= l * s
+#     print(vertical_line)
+# line(15, 'horizontal', '-')
+# line(6, 'vertical', '|')
 # 4
 # def max_num(a,b,c,d):
 #     max_val = max(a,b,c,d)

@@ -156,11 +156,11 @@
 # if len(set(digits)) == len(digits):
 #     count += 1
 # print(f"Кількість чисел з різними цифрами в діапазоні від 100 до 9999: {count}")
-# 11. Пользователь вводит любое целое число. 
-# Необходимо из этого целого числа удалить все цифры 3 и 6 и 
-# вывести обратно на экран. 
-number = int(input("Введите целое число: "))
-number_str = str(number)
-result_str = ''.join(char for char in number_str if char not in ['3', '6'])
-result = int(result_str)
-print(f"Результат без цифр 3 и 6: {result}")
+# # 11. Пользователь вводит любое целое число. 
+# # Необходимо из этого целого числа удалить все цифры 3 и 6 и 
+# # вывести обратно на экран. 
+# number = int(input("Введите целое число: "))
+# number_str = str(number)
+# result_str = ''.join(char for char in number_str if char not in ['3', '6'])
+# result = int(result_str)
+# print(f"Результат без цифр 3 и 6: {result}")

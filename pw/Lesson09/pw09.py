@@ -46,29 +46,47 @@
 # print(f"Площа квадрата: {square_area}")
 # print(f"Площа ромба: {rhombus_area}")
 # print(f"Кількість обчислень площі:{CalculatorArea.get_calculator_count()}")
-# 3
-class Calculator:
-    @staticmethod
-    def find_max(a,b,c,d):
-        return max(a,b,c,d)
-    @staticmethod
-    def find_min(a,b,c,d):
-        return min(a,b,c,d)
-    @staticmethod
-    def find_average(a,b,c,d):
-        return(a+b+c+d)/4
-    @staticmethod
-    def factorial(n):
-        if n == 0:
-            return 1
-        else:
-            return n * Calculator.factorial(n-1)
-a,b,c,d = 5,10,3,8
-max_value = Calculator.find_max(a,b,c,d)
-min_value = Calculator.find_min(a,b,c,d)
-average_value = Calculator.find_average(a,b,c,d)
-factorial_value = Calculator.factorial(4)
-print(f"Максимум: {max_value}")
-print(f"Мінімум: {min_value}")
-print(f"Середнє арифметичне: {average_value}")
-print(f"Факторіал 4: {factorial_value}")
+# # 3
+# class Calculator:
+#     @staticmethod
+#     def find_max(a,b,c,d):
+#         return max(a,b,c,d)
+#     @staticmethod
+#     def find_min(a,b,c,d):
+#         return min(a,b,c,d)
+#     @staticmethod
+#     def find_average(a,b,c,d):
+#         return(a+b+c+d)/4
+#     @staticmethod
+#     def factorial(n):
+#         if n == 0:
+#             return 1
+#         else:
+#             return n * Calculator.factorial(n-1)
+# a,b,c,d = 5,10,3,8
+# max_value = Calculator.find_max(a,b,c,d)
+# min_value = Calculator.find_min(a,b,c,d)
+# average_value = Calculator.find_average(a,b,c,d)
+# factorial_value = Calculator.factorial(4)
+# print(f"Максимум: {max_value}")
+# print(f"Мінімум: {min_value}")
+# print(f"Середнє арифметичне: {average_value}")
+# print(f"Факторіал 4: {factorial_value}")
+# # 4
+# class Human:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#     def introduce(self):
+#         print(f"Мене звуть {self.name} і мені {self.age} років.")
+# class Builder(Human):
+#     def __init__(self, name, age, speciality):
+#         super().__init__(name, age)
+#         self.speciality = speciality
+#     def build(self):
+#         print(f"{self.name} - це робітник із спеціальністю '{self.speciality}'.")
+# class Sailor(Human):
+#     def __init__(self, name, age, ship_name):
+#         super().__init__(name, age)
+#         self.ship_name = ship_name
+#     def sail()

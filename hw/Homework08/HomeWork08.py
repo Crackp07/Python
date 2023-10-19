@@ -167,40 +167,40 @@
 # plane2 -= 200
 # print(plane2)
 
-# 4. Создать класс Flat (квартира). Реализовать перегруженные операторы:
-# - Проверка на равенство площадей квартир (операция ==);
-# - Проверка на неравенство площадей квартир (операция !=);
-# - Сравнение двух квартир по цене (операции > < <= >=).
-class Flat:
-    def __init__(self, name, area, price):
-        self.name = name
-        self.area = area
-        self.price = price
+# # 4. Создать класс Flat (квартира). Реализовать перегруженные операторы:
+# # - Проверка на равенство площадей квартир (операция ==);
+# # - Проверка на неравенство площадей квартир (операция !=);
+# # - Сравнение двух квартир по цене (операции > < <= >=).
+# class Flat:
+#     def __init__(self, name, area, price):
+#         self.name = name
+#         self.area = area
+#         self.price = price
 
-    def __eq__(self, other):
-        return self.area == other.area
+#     def __eq__(self, other):
+#         return self.area == other.area
 
-    def __ne__(self, other):
-        return self.area != other.area
+#     def __ne__(self, other):
+#         return self.area != other.area
 
-    def __lt__(self, other):
-        return self.price < other.price
+#     def __lt__(self, other):
+#         return self.price < other.price
 
-    def __le__(self, other):
-        return self.price <= other.price
+#     def __le__(self, other):
+#         return self.price <= other.price
 
-    def __gt__(self, other):
-        return self.price > other.price
+#     def __gt__(self, other):
+#         return self.price > other.price
 
-    def __ge__(self, other):
-        return self.price >= other.price
+#     def __ge__(self, other):
+#         return self.price >= other.price
 
-    def __str__(self):
-        return f"{self.name} - Area: {self.area} sq. m, Price: ${self.price}"
-flat1 = Flat("2-bedroom", 100, 150000)
-flat2 = Flat("1-bedroom", 80, 120000)
+#     def __str__(self):
+#         return f"{self.name} - Area: {self.area} sq. m, Price: ${self.price}"
+# flat1 = Flat("2-bedroom", 100, 150000)
+# flat2 = Flat("1-bedroom", 80, 120000)
 
-print(flat1 == flat2)
-print(flat1 != flat2)
-print(flat1 > flat2)
-print(flat1 >= flat2)
+# print(flat1 == flat2)
+# print(flat1 != flat2)
+# print(flat1 > flat2)
+# print(flat1 >= flat2)

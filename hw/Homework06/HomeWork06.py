@@ -243,43 +243,43 @@
 # # раз. (Так как процесс отыскания пути для разных начальных клеток может затянуться,
 # # то рекомендуется сначала опробовать задачу на поле размером 6×6). В программе 
 # # необходимо использовать рекурсию.
-# import numpy as np
+import numpy as np
 
-# def is_valid_move(x, y, board):
-#     if x >= 0 and x < board.shape[0] and y >= 0 and y < board.shape[1] and board[x, y] == -1:
-#         return True
-#     return False
-# def print_board(board):
-#     for row in board:
-#         print(' '.join([f'{cell:2}' for cell in row]))
-# def knight_tour(board, x, y, move_count):
-#     if move_count == board.size:
-#         print_board(board)
-#         return True
-#     move_x = [2, 1, -1, -2, -2, -1, 1, 2]
-#     move_y = [1, 2, 2, 1, -1, -2, -2, -1]
-#     for i in range(8):
-#         new_x = x + move_x[i]
-#         new_y = y + move_y[i]
-#         if is_valid_move(new_x, new_y, board):
-#             board[new_x, new_y] = move_count
-#             if knight_tour(board, new_x, new_y, move_count + 1):
-#                 return True
-#             board[new_x, new_y] = -1
-#     return False
-# def main():
-#     n = 6
-#     start_x = int(input("Введіть початкову координату X: "))
-#     start_y = int(input("Введіть початкову координату Y: "))
-#     if start_x < 0 or start_x >= n or start_y < 0 or start_y >= n:
-#         print("Введені координати поза діапазоном доски.")
-#         return
-#     board = np.full((n, n), -1)
-#     board[start_x, start_y] = 0
-#     if knight_tour(board, start_x, start_y, 1):
-#         print("Шлях знайдено!")
-#     else:
-#         print("шлях не знайдено.")
-# if __name__ == "__main__":
-#     main()
+def is_valid_move(x, y, board):
+    if x >= 0 and x < board.shape[0] and y >= 0 and y < board.shape[1] and board[x, y] == -1:
+        return True
+    return False
+def print_board(board):
+    for row in board:
+        print(' '.join([f'{cell:2}' for cell in row]))
+def knight_tour(board, x, y, move_count):
+    if move_count == board.size:
+        print_board(board)
+        return True
+    move_x = [2, 1, -1, -2, -2, -1, 1, 2]
+    move_y = [1, 2, 2, 1, -1, -2, -2, -1]
+    for i in range(8):
+        new_x = x + move_x[i]
+        new_y = y + move_y[i]
+        if is_valid_move(new_x, new_y, board):
+            board[new_x, new_y] = move_count
+            if knight_tour(board, new_x, new_y, move_count + 1):
+                return True
+            board[new_x, new_y] = -1
+    return False
+def main():
+    n = 6 #при 8 дуже довго думає, тому поставив 6
+    start_x = int(input("Введіть початкову координату X: "))
+    start_y = int(input("Введіть початкову координату Y: "))
+    if start_x < 0 or start_x >= n or start_y < 0 or start_y >= n:
+        print("Введені координати поза діапазоном доски.")
+        return
+    board = np.full((n, n), -1)
+    board[start_x, start_y] = 0
+    if knight_tour(board, start_x, start_y, 1):
+        print("Шлях знайдено!")
+    else:
+        print("шлях не знайдено.")
+if __name__ == "__main__":
+    main()
 
